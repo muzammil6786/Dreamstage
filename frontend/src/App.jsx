@@ -35,6 +35,7 @@ import {
   X,
   Home as HomeIcon,
 } from "lucide-react";
+import { Mascot } from 'page-mascot'
 
 import api from "./api";
 
@@ -1031,8 +1032,21 @@ function Home({ onLogin, onRegister }) {
           <strong>10+</strong>
           <span>Major Cities</span>
         </div>
+     
       </section>
+<div className="mascot-section">
+  
+  <div className="mascot-wrapper">
+    <Mascot
+      directions="/mascots/kamran-directions.webp"
+      reactions="/mascots/kamran-reactions.webp"
+    />
+    
+  </div>
+  <br />
+  <h2 className="mascot-title">We’re waiting for you!</h2>
 
+</div>
       <section
         className="publicSection introSection"
         id="about"
